@@ -1,6 +1,7 @@
 {% extends "blog/bbase.html" %}
 
 {% block content %}
+
     <div class="main">
 
         <!-- Posts  -->
@@ -19,7 +20,7 @@
         <div class="pagination" style="margin-top: 20px; margin-left: -20px; ">
             <span class="step-links">
                 {% if posts.has_previous %}
-                    <a href= "?page={{ posts.previous_page_number }}">newer entries &lt;&lt; </a>
+                    <a href= "?page={{ posts.previous_page_number }}">Newer entries &lt;&lt; </a>
                 {% endif %}
 
                 <span class="current">
@@ -27,7 +28,7 @@
                 </span>
 
                 {% if posts.has_next %}
-                    <a href="?page={{ posts.next_page_number }}"> &gt;&gt; older entries</a>
+                    <a href="?page={{ posts.next_page_number }}"> &gt;&gt; Older entries</a>
                 {% endif %}
             </span>
         </div>
